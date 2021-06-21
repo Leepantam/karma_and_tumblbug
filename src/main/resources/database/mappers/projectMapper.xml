@@ -26,15 +26,18 @@
 		resultType="GiftDTO">
 		select * from project_gift where num=#{num}
 	</select>
+	
 	<select id="getProjectNum" resultType="java.lang.Long">
 		select project_seq.nextval
 		from dual
 	</select>
+	
 	<insert id="setInsertProject" parameterType="ProjectDTO">
 		insert into project
 		(num, id, title, category,makerName,media_id,search_id)
 		values(#{num},#{id},#{title},#{category},#{makerName},pMedia_seq.nextval,pSearch_seq.nextval)
 	</insert>
+	
 	<select id="getMyProject" parameterType="MembershipDTO"
 		resultType="ProjectDTO">
 		select * from project where id=#{id} order by num desc

@@ -107,8 +107,7 @@ h3{
 
 			<div style="width: 20%; text-align: center;">
 
-				<c:if
-					test="${not empty membership and membership.id ne selectDTO.id}">
+				<c:if test="${not empty membership and membership.id ne selectDTO.id}">
 
 					<c:if test="${pList eq null}">
 						<c:if test="${payList.size()>0}">

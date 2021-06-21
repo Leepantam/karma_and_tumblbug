@@ -48,6 +48,7 @@ h3{
 					카테고리의 프로젝트만 보기</a>
 			</div>
 		</form>
+		
 		<div class="input-group">
 			<c:forEach items="${projectList}" var="project">
 				<c:if test="${project.state eq 'accept'}">

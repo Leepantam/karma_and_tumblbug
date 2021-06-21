@@ -31,6 +31,7 @@ img {
 <body>
 	<c:import url="../template/header.jsp"></c:import>
 	<div class="container">
+	
 		<h3>프로젝트 점검</h3>
 		<h4>submit</h4>
 		<c:forEach items="${adminProject}" var="aProject">
@@ -67,6 +68,7 @@ img {
 				</div>
 			</c:if>
 		</c:forEach>
+		
 		<h4>denied</h4>
 		<c:forEach items="${adminProject}" var="aProject">
 			<c:if test="${aProject.state eq 'denied'}">
@@ -128,6 +130,10 @@ img {
 				</div>
 			</c:if>
 		</c:forEach>
+		
+		
+		
+		
 	</div>
 </body>
 </html>

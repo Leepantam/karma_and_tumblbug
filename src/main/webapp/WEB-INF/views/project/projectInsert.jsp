@@ -49,7 +49,7 @@ img {
 		<h4>프로젝트 작성</h4>
 
 		<br>
-		<!-- Nav tabs -->
+
 		<div class="form-group">
 			<ul class="nav nav-tabs" role="tablist">
 				<li class="nav-item"><a class="nav-link active"
@@ -67,17 +67,9 @@ img {
 						<button type="button" class="btn btn-outline-primary" id="submit">제출</button>
 					</div>
 				</li>
-				<!-- 
-				<li><a type="button" class="btn btn-outline-primary"
-					id="finalCheck">finalCheck</a></li>
-				<li><a type="button" class="btn btn-outline-primary"
-					id="valCheck">console</a></li>
-				<li><a type="button" class="btn btn-outline-primary"
-					id="summerCheck">summer</a></li>
-					 -->
 			</ul>
 		</div>
-		<!-- Tab panes -->
+		
 		<form action="./projectUpdate" method="post" id="frm"
 			enctype="multipart/form-data">
 
@@ -258,6 +250,8 @@ img {
 					</div>
 
 				</div>
+				
+				
 			</div>
 		</form>
 	</div>

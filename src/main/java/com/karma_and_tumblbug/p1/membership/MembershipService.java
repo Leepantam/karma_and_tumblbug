@@ -50,6 +50,7 @@ public class MembershipService {
 		membershipDTO = membershipDAO.login(membershipDTO);
 		return membershipDTO;
 	}
+	
 	public int join(MembershipDTO membershipDTO) throws Exception{
 		return membershipDAO.join(membershipDTO);
 	}

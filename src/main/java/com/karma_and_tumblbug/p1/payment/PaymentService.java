@@ -17,6 +17,7 @@ public class PaymentService {
 	public int setDelete(PaymentDTO paymentDTO) throws Exception{
 		return paymentDAO.setDelete(paymentDTO);
 	}
+	
 	public int setInsert(PaymentDTO paymentDTO) throws Exception{
 		if(paymentDTO.getDefaultMethod().equals("true")) {
 			PaymentDTO temp = new PaymentDTO();

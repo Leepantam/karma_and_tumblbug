@@ -18,6 +18,7 @@ public class MembershipDAO {
 		membershipDTO = sqlSession.selectOne(NAMESPACE+"login", membershipDTO);
 		return membershipDTO;
 	}
+	
 	public int join(MembershipDTO membershipDTO) throws Exception{
 		return sqlSession.insert(NAMESPACE+"join", membershipDTO);
 	}
